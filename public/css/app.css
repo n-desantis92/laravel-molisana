@@ -1,5 +1,112 @@
-body {
-  background-color: red;
-  height: 100vh;
+.mt-1 {
+  margin-top: 15px;
+}
+
+.mt-2 {
+  margin-top: 30px;
+}
+
+.mt-3 {
+  margin-top: 45px;
+}
+
+.mt-4 {
+  margin-top: 60px;
+}
+
+.mt-5 {
+  margin-top: 75px;
+}
+
+.mb-1 {
+  margin-bottom: 15px;
+}
+
+.mb-2 {
+  margin-bottom: 30px;
+}
+
+.mb-3 {
+  margin-bottom: 45px;
+}
+
+.mb-4 {
+  margin-bottom: 60px;
+}
+
+.mb-5 {
+  margin-bottom: 75px;
+}
+
+.mtb-1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mtb-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mtb-3 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.mtb-4 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.mtb-5 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  background-color: green;
+  margin: 0 auto;
+}
+
+header {
   width: 100%;
+}
+header .logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+header .logo img {
+  width: 200px;
+}
+header nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 20px 10px;
+  font-size: 24px;
+}
+header nav ul li .active {
+  background-color: #b2e5fc;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
 }
