@@ -142,3 +142,45 @@ main .cards .card {
 main .cards .card img {
   width: 100%;
 }
+
+footer {
+  width: 100%;
+  color: #848d9b;
+}
+footer .container {
+  display: flex;
+}
+footer .container .azienda {
+  width: 40%;
+  padding: 50px 0;
+}
+footer .container .azienda img {
+  width: 200px;
+}
+footer .container .azienda .dati-azienda ul {
+  list-style-type: none;
+  font-size: 14px;
+}
+footer .container .helper {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+footer .container .helper ul {
+  list-style-type: none;
+  width: 50%;
+  font-size: 14px;
+}
+footer .container .helper ul h3 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+footer .container .helper ul li {
+  padding: 5px 0;
+}
+footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

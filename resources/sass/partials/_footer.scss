@@ -1,0 +1,53 @@
+footer {
+    width: 100%;
+    color: $text_color;
+    .container {
+
+        display: flex;
+
+        .azienda {
+            width: 40%;
+            padding: 50px 0;
+
+            img {
+                width: 200px;
+            }
+
+            .dati-azienda {
+
+
+                ul {
+                    list-style-type: none;
+                    font-size: $font_piccolo;
+                }
+            }
+        }
+
+        .helper {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 0;
+
+            ul {
+                list-style-type: none;
+                width: 50%;
+                font-size: $font_piccolo;
+
+                h3 {
+                    font-size: $font_medio;
+                    padding: 10px 0;
+                }
+
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

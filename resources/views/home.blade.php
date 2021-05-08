@@ -16,6 +16,5 @@
     @include('parts.main')
     @include('parts.footer')
 
-
 </body>
 </html>
