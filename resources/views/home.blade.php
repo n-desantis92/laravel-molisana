@@ -12,36 +12,10 @@
     <title>La Molisana</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="{{ asset('../images/marchio-sito-test.png') }}" alt="">
-        </div>
-        <nav class="main-nav">
-            {{-- menu --}}
-            <ul>
-                <li class="active"><a href=""#>Home</a></li>
-                <li><a href="#">Prodotti</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-            {{-- /menu --}}
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            {{-- sezione-paste-lunghe --}}
-            <section >
-                <h2>le lunghe</h2>
-                <div class="cards">
-                    @foreach ($lunghe as $pasta)
-                    <div class="card">
-                        <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
-                    </div>
-                    @endforeach
-                </div>
-            </section>
-            {{-- /sezione-paste-lunghe --}}
-        </div>
-    </main>
+    @include('parts.header')
+    @include('parts.main')
+    @include('parts.footer')
+
 
 </body>
 </html>
