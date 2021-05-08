@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 .container {
-    width: $max_conteiner;
+    max-width: $max_conteiner;
     background-color: green;
     margin: 0 auto;
-
 }
