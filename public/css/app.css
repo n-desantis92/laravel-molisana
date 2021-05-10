@@ -166,6 +166,14 @@ main .product img {
 main .product p {
   padding: 50px 10%;
 }
+main .product .slider {
+  display: flex;
+  align-items: center;
+}
+main .product .slider i {
+  font-size: 30px;
+  cursor: pointer;
+}
 
 footer {
   width: 100%;

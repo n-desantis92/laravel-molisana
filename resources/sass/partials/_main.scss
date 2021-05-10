@@ -58,5 +58,14 @@ main {
             padding: 50px 10%;
         }
 
+        .slider {
+            display: flex;
+            align-items: center;
+            i {
+                font-size: 30px;
+                cursor: pointer;
+
+            }
+        }
     }
 }
