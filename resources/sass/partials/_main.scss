@@ -27,8 +27,31 @@ main {
                 img {
                     width: 100%;
                 }
+
+                @media screen and (max-width: 768px) {
+                    width: calc((100% / 2) - 10px);
+
+                }
             }
         }
     }
 
+    .product {
+        background-color: $product_bg;
+        color: $main_color;
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            padding: 50px 10%;
+        }
+
+    }
 }

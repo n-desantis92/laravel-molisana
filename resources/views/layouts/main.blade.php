@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     {{-- /google-font --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @yield('fontawesome')
     <title>@yield('pageTitle')</title>
 </head>
 <body>
