@@ -1,20 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{-- google-font --}}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    {{-- /google-font --}}
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>La Molisana</title>
-</head>
-<body>
-    @include('parts.header')
-    @include('parts.main')
-    @include('parts.footer')
+@extends('layouts.main')
 
-</body>
-</html>
+@section('pageTitle')
+    Home Page La Molisana | Sito Ufficiale
+@endsection
+
+@section('main')
+            
+    <div class="container-home">
+
+        <div class="container">
+    
+            {{-- sezione-paste-lunghe --}}
+            <section >
+                <h2>LE LUNGHE</h2>
+                <div class="cards">
+                    @foreach ($lunghe as $pasta)
+                    <div class="card">
+                        <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                    </div>
+                    @endforeach
+                </div>
+            </section>
+            {{-- /sezione-paste-lunghe --}}
+            {{-- sezione-paste-corte --}}
+            <section >
+                <h2>LE CORTE</h2>
+                <div class="cards">
+                    @foreach ($corte as $pasta)
+                    <div class="card">
+                        <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                    </div>
+                    @endforeach
+                </div>
+            </section>
+            {{-- /sezione-paste-corte --}}
+            {{-- sezione-paste-cortissime --}}
+            <section >
+                <h2>LE CORTISSIME</h2>
+                <div class="cards">
+                    @foreach ($cortissime as $pasta)
+                    <div class="card">
+                        <img src="{{$pasta['src']}}" alt="{{$pasta['titolo']}}">
+                    </div>
+                    @endforeach
+                </div>
+            </section>
+            {{-- /sezione-paste-cortissime --}}
+        </div>
+    </div>
+@endsection
