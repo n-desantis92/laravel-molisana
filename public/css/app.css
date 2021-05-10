@@ -147,6 +147,11 @@ main .container-home .cards .card img {
     width: calc((100% / 2) - 10px);
   }
 }
+@media screen and (max-width: 480px) {
+  main .container-home .cards .card {
+    width: calc(100% - 20px);
+  }
+}
 main .product {
   background-color: #b7dae5;
   color: #002d73;
@@ -197,6 +202,16 @@ footer .container .helper ul h3 {
 }
 footer .container .helper ul li {
   padding: 5px 0;
+}
+@media screen and (max-width: 768px) {
+  footer .container .helper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+  }
 }
 footer img {
   width: 100%;
