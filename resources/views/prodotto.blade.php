@@ -14,11 +14,11 @@
         <div class="container">
 
             <h1>{{$pasta['titolo']}}</h1>
-            <img src="{{$pasta['src-h']}}" alt="">
+            <img src="{{$pasta['src-h']}}" alt="{{$pasta['titolo']}}">
             <div class="slider">
-                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                <a href="{{$prev}}"><i class="fas fa-chevron-left"></i></a>
                 <img src="{{$pasta['src-p']}}" alt="{{$pasta['titolo']}}">
-                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                <a href="{{$next}}"><i class="fas fa-chevron-right"></i></a>
             </div>
             <p>
                 {!!$pasta['descrizione']!!}
